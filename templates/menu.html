@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Items</title>
+</head>
+<body>
+    <h1>Available Menus:</h1>
+    {% for menu_item in menu %}
+    {{menu_item.Title}}<br>
+    {{menu_item.Price}}<br>
+    {{menu_item.Inventory}}<br>
+    <br>
+    {% endfor %}
+</body>
+</html>
